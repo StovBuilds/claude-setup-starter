@@ -11,9 +11,21 @@ The fix is simple: **nothing important lives only in a chat.** It lives in a few
 Claude reads every time. This pack gives you six of them, with templates and examples. None of it
 is clever code. It works whether you run one session or several at once.
 
+> **Let Claude set it up.** Open Claude Code (or another assistant that can run commands and edit
+> files) in your project folder and paste this one line:
+>
+> ```
+> Set up https://github.com/StovBuilds/claude-setup-starter in this project. Follow its SETUP.md.
+> ```
+>
+> It downloads the files, asks you a few quick questions, and adds everything without overwriting
+> what you already have (existing files are merged and it shows you the changes). In a plain chat
+> that can't touch your files, Claude can walk you through the same steps by hand instead.
+
 ## What's in the box
 
 ```
+SETUP.md                        install steps Claude follows (see the box above)
 starter/
   CLAUDE.md                     1. the rules file
   memory/
@@ -29,12 +41,13 @@ starter/
   commitments.md                6. promises and reminders, with deadlines
 ```
 
-## Getting started (five minutes)
+## Getting started by hand (five minutes)
 
 1. Copy everything inside `starter/` into the root of your project, including the hidden `.claude`
-   folder:
+   folder. The `-n` stops it overwriting files you already have; merge those by hand (or let
+   Claude do it, as above):
    ```sh
-   cp -R starter/. /path/to/your-project/
+   cp -Rn starter/. /path/to/your-project/
    ```
 2. Open `CLAUDE.md` and replace the "Project facts" section with your own. Delete any rule you
    don't want.
