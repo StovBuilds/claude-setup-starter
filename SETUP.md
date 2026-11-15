@@ -76,7 +76,7 @@ fictional web shop): leave those out of the user's project.
 | `memory/MEMORY.md` | Copy the headings and the intro, without the example lines. | Keep it. Add only the lines for notes you create. |
 | `memory/_TEMPLATE.md` | Copy. | Skip (tell the user). |
 | `memory/` example notes | Don't copy. | Don't copy. |
-| `state.md` | Create it with only the anchor comment line from the starter's first line, then a blank line. | Keep every entry. If the anchor line is missing, add it as the very first line. |
+| `state.md` | Create it with only the anchor comment line from the starter's first line, then a blank line. | Keep every entry. If the anchor line is missing, add it directly under the file's title line (or as the first line if there is no title), so new entries land above the old ones. |
 | `desk.md`, `commitments.md` | Copy, but empty the "Open" and "Done" lists. | Keep it as is. Mention it in the summary. |
 | `.claude/skills/_TEMPLATE.md` | Copy. | Skip. |
 | `.claude/skills/release-checklist/` | Copy only if the user wants an example skill; otherwise leave it out. | Never replace a skill with the same name. |
